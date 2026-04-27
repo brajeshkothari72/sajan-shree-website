@@ -1,10 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { FileText, DollarSign, MessageCircle } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import SEO from '@/components/SEO.jsx';
 import EnquiryForm from '@/components/EnquiryForm.jsx';
 
 function EnquiryPage() {
@@ -14,10 +14,11 @@ function EnquiryPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Enquiry - Sajan Shree Garments</title>
-        <meta name="description" content="Send us your bulk uniform and garment requirements. Request catalogue, get wholesale pricing, or contact us on WhatsApp for quick assistance." />
-      </Helmet>
+      <SEO
+        title="Bulk Uniform Enquiry in Indore"
+        description="Send a bulk uniform enquiry to Sajan Shree Garments for school uniforms, blazers, corporate uniforms, security uniforms, aprons, and wholesale garment pricing in Indore."
+        path="/enquiry"
+      />
 
       <Header />
 
@@ -31,7 +32,7 @@ function EnquiryPage() {
               className="max-w-4xl mx-auto text-center"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{letterSpacing: '-0.02em'}}>
-                Looking for bulk uniforms or garment supply?
+                Looking for bulk uniforms or garment supply in Indore?
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Share your requirements with us and we'll get back to you with detailed information and competitive pricing

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Target, Heart, HeartHandshake as Handshake, TrendingUp } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import SEO from '@/components/SEO.jsx';
 
 function AboutUsPage() {
   const values = [
@@ -31,10 +31,11 @@ function AboutUsPage() {
 
   return (
     <>
-      <Helmet>
-        <title>About Us - Sajan Shree Garments</title>
-        <meta name="description" content="Learn about Sajan Shree Garments, a trusted manufacturer and wholesaler of quality uniforms and garments in Indore. Our mission, values, and commitment to excellence." />
-      </Helmet>
+      <SEO
+        title="About Our Uniform Manufacturing Business"
+        description="Learn about Sajan Shree Garments, a trusted uniform manufacturer and wholesaler in Indore for schools, corporates, institutions, and bulk garment buyers."
+        path="/about"
+      />
 
       <Header />
 
@@ -51,7 +52,7 @@ function AboutUsPage() {
                 About Sajan Shree Garments
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Your trusted partner for quality garment manufacturing and wholesale supply
+                Your trusted uniform manufacturing and wholesale supply partner in Indore
               </p>
             </motion.div>
           </div>

@@ -9,6 +9,8 @@ import ManufacturingPage from './pages/ManufacturingPage.jsx';
 import GalleryPage from './pages/GalleryPage.jsx';
 import EnquiryPage from './pages/EnquiryPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
+import ServicePage from './pages/ServicePage.jsx';
+import { servicePages } from './lib/business.js';
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/enquiry" element={<EnquiryPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        {servicePages.map((service) => (
+          <Route key={service.slug} path={`/${service.slug}`} element={<ServicePage slug={service.slug} />} />
+        ))}
         <Route path="*" element={
           <div className="min-h-screen flex items-center justify-center bg-background">
             <div className="text-center">

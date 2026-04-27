@@ -1,9 +1,11 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import SEO from '@/components/SEO.jsx';
 import ProductCard from '@/components/ProductCard.jsx';
+import { servicePages } from '@/lib/business';
 
 function ProductsPage() {
   const products = [
@@ -39,10 +41,11 @@ function ProductsPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Our Products - Sajan Shree Garments</title>
-        <meta name="description" content="Browse our complete range of uniforms and garments including school uniforms, blazers, pants, aprons, security uniforms, corporate wear, and custom bulk orders." />
-      </Helmet>
+      <SEO
+        title="Uniform Products in Indore"
+        description="Browse school uniforms, blazers, readymade pants, aprons, security uniforms, corporate uniforms, and custom bulk garments manufactured by Sajan Shree Garments in Indore."
+        path="/products"
+      />
 
       <Header />
 
@@ -56,10 +59,10 @@ function ProductsPage() {
               className="max-w-4xl mx-auto text-center"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{letterSpacing: '-0.02em'}}>
-                Our products
+                Uniform products manufactured in Indore
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Quality garments for schools, corporates, and institutions with bulk order capabilities
+                School uniforms, blazers, corporate uniforms, security uniforms, aprons, and readymade garments with bulk order capabilities
               </p>
             </motion.div>
           </div>
@@ -84,6 +87,25 @@ function ProductsPage() {
         </section>
 
         <section className="py-20 bg-muted">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center leading-tight">
+                Product categories for local buyers
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {servicePages.map((service) => (
+                  <Link
+                    key={service.slug}
+                    to={`/${service.slug}`}
+                    className="rounded-lg border border-border bg-background p-5 transition-all duration-200 hover:border-primary hover:shadow-sm"
+                  >
+                    <h3 className="font-semibold mb-2">{service.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <motion.div
@@ -99,18 +121,18 @@ function ProductsPage() {
                   We specialize in custom bulk orders. Share your requirements and we'll manufacture garments exactly to your specifications.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
-                  <a 
-                    href="/enquiry"
+                  <Link
+                    to="/enquiry"
                     className="inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground px-6 py-3 font-medium transition-all duration-200 hover:bg-primary/90 active:scale-[0.98]"
                   >
                     Send enquiry
-                  </a>
-                  <a 
-                    href="/contact"
+                  </Link>
+                  <Link
+                    to="/contact"
                     className="inline-flex items-center justify-center rounded-lg bg-secondary text-secondary-foreground px-6 py-3 font-medium transition-all duration-200 hover:bg-secondary/90 active:scale-[0.98]"
                   >
                     Contact us
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             </div>

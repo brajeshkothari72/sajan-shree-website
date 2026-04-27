@@ -1,9 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Package, Truck, Ruler, Shirt, Building2, RefreshCw } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import SEO from '@/components/SEO.jsx';
 import CapabilityCard from '@/components/CapabilityCard.jsx';
 
 function ManufacturingPage() {
@@ -48,10 +49,11 @@ function ManufacturingPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Bulk Manufacturing & Wholesale - Sajan Shree Garments</title>
-        <meta name="description" content="Large-scale garment manufacturing and wholesale supply services. Custom sizing, fabric options, and reliable delivery for institutional and bulk orders." />
-      </Helmet>
+      <SEO
+        title="Bulk Garment Manufacturing in Indore"
+        description="Large-scale garment manufacturing and wholesale uniform supply in Indore with custom sizing, fabric options, quality checks, and reliable delivery for institutional bulk orders."
+        path="/manufacturing"
+      />
 
       <Header />
 
@@ -65,7 +67,7 @@ function ManufacturingPage() {
               className="max-w-4xl mx-auto text-center"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{letterSpacing: '-0.02em'}}>
-                Bulk manufacturing & wholesale supply
+                Bulk garment manufacturing and wholesale supply in Indore
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Specialized manufacturing services for bulk garment buyers, institutions, and wholesale distributors
@@ -150,18 +152,18 @@ function ManufacturingPage() {
                   Contact us to discuss your requirements and get a detailed quote for your bulk garment order.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
-                  <a 
-                    href="/enquiry"
+                  <Link
+                    to="/enquiry"
                     className="inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground px-6 py-3 font-medium transition-all duration-200 hover:bg-primary/90 active:scale-[0.98]"
                   >
                     Request quote
-                  </a>
-                  <a 
-                    href="/contact"
+                  </Link>
+                  <Link
+                    to="/contact"
                     className="inline-flex items-center justify-center rounded-lg bg-secondary text-secondary-foreground px-6 py-3 font-medium transition-all duration-200 hover:bg-secondary/90 active:scale-[0.98]"
                   >
                     Contact us
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             </div>

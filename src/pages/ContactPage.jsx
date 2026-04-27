@@ -1,17 +1,18 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import SEO from '@/components/SEO.jsx';
 import ContactForm from '@/components/ContactForm.jsx';
 
 function ContactPage() {
   return (
     <>
-      <Helmet>
-        <title>Contact Us - Sajan Shree Garments</title>
-        <meta name="description" content="Get in touch with Sajan Shree Garments. Contact us for bulk uniform orders, wholesale enquiries, or any questions about our products and services." />
-      </Helmet>
+      <SEO
+        title="Contact Uniform Manufacturer in Indore"
+        description="Contact Sajan Shree Garments in Indore for bulk uniform orders, wholesale garment enquiries, school uniforms, blazers, aprons, security uniforms, and corporate wear."
+        path="/contact"
+      />
 
       <Header />
 
@@ -28,7 +29,7 @@ function ContactPage() {
                 Contact us
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We're here to help with your garment requirements. Reach out to us and we'll respond promptly.
+                Contact our Indore team for school uniform, corporate uniform, security uniform, apron, blazer, and custom bulk garment requirements.
               </p>
             </motion.div>
           </div>

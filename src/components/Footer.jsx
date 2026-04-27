@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img 
@@ -35,6 +35,27 @@ function Footer() {
               </Link>
               <Link to="/contact" className="text-sm opacity-90 hover:opacity-100 transition-opacity duration-200">
                 Contact us
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <span className="text-sm font-semibold tracking-wide uppercase mb-4 block">Products</span>
+            <nav className="flex flex-col gap-2">
+              <Link to="/school-uniforms-indore" className="text-sm opacity-90 hover:opacity-100 transition-opacity duration-200">
+                School uniforms
+              </Link>
+              <Link to="/school-blazers-indore" className="text-sm opacity-90 hover:opacity-100 transition-opacity duration-200">
+                School blazers
+              </Link>
+              <Link to="/corporate-uniforms-indore" className="text-sm opacity-90 hover:opacity-100 transition-opacity duration-200">
+                Corporate uniforms
+              </Link>
+              <Link to="/security-uniforms-indore" className="text-sm opacity-90 hover:opacity-100 transition-opacity duration-200">
+                Security uniforms
+              </Link>
+              <Link to="/aprons-manufacturer-indore" className="text-sm opacity-90 hover:opacity-100 transition-opacity duration-200">
+                Aprons
               </Link>
             </nav>
           </div>

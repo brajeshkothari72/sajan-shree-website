@@ -1,11 +1,11 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Package, Users, Clock, Award, Truck, Shield, Sparkles } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import SEO from '@/components/SEO.jsx';
 import WhyChooseCard from '@/components/WhyChooseCard.jsx';
 import EnquiryForm from '@/components/EnquiryForm.jsx';
 
@@ -54,10 +54,11 @@ function HomePage() {
 
   return (
     <>
-      <Helmet>
-        <title>Sajan Shree Garments - Manufacturers & Wholesalers of Quality Uniforms</title>
-        <meta name="description" content="Leading manufacturers and wholesalers of school uniforms, blazers, readymade pants, aprons, security uniforms, and corporate wear in Indore. Bulk orders and custom garments available." />
-      </Helmet>
+      <SEO
+        title="Uniform Manufacturer & Wholesaler in Indore"
+        description="Sajan Shree Garments manufactures and wholesales school uniforms, blazers, readymade pants, aprons, security uniforms, corporate wear, and custom bulk garments in Indore."
+        path="/"
+      />
 
       <Header />
 
@@ -80,10 +81,10 @@ function HomePage() {
               className="max-w-4xl"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight" style={{letterSpacing: '-0.02em'}}>
-                Manufacturers & wholesalers of quality uniforms and readymade garments
+                Uniform manufacturer and wholesaler in Indore
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed max-w-2xl">
-                Specializing in school uniforms, blazers, readymade pants, aprons, security uniforms, corporate wear, and custom bulk garments for institutions and businesses.
+                Specializing in school uniforms, blazers, readymade pants, aprons, security uniforms, corporate wear, and custom bulk garments for Indore schools, institutions, and businesses.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button 
@@ -132,7 +133,7 @@ function HomePage() {
                 About Sajan Shree Garments
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We are a trusted manufacturer and wholesaler of quality garments, serving schools, corporates, and institutions across the region. With years of experience in bulk garment production, we deliver consistent quality, competitive pricing, and reliable supply partnerships. Our manufacturing facility is equipped to handle large orders while maintaining the highest standards of craftsmanship.
+                We are a trusted uniform manufacturer and wholesaler in Indore, serving schools, corporates, security agencies, and institutions across the region. With years of experience in bulk garment production, we deliver consistent quality, competitive pricing, and reliable supply partnerships. Our manufacturing facility is equipped to handle large orders while maintaining high standards of craftsmanship.
               </p>
             </motion.div>
 
