@@ -26,7 +26,7 @@ function Header() {
         <div className="flex h-20 items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <img 
-              src="https://horizons-cdn.hostinger.com/1e20a129-cf80-484b-ae4d-9b3cac318f61/6c9f5567e53bc605f696d75f043be231.png" 
+              src="/logo.png" 
               alt="Sajan Shree Garments butterfly logo" 
               className="h-12 w-12 object-contain"
             />
@@ -62,7 +62,7 @@ function Header() {
               <div className="flex flex-col gap-4 mt-8">
                 <div className="flex items-center gap-3 pb-4 border-b">
                   <img 
-                    src="https://horizons-cdn.hostinger.com/1e20a129-cf80-484b-ae4d-9b3cac318f61/6c9f5567e53bc605f696d75f043be231.png" 
+                    src="/logo.png" 
                     alt="Sajan Shree Garments butterfly logo" 
                     className="h-10 w-10 object-contain"
                   />
