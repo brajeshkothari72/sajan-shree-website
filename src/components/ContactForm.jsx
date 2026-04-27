@@ -134,7 +134,7 @@ function ContactForm() {
               <MessageCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium mb-1">WhatsApp</p>
-                <p className="text-muted-foreground">94250062368</p>
+                <p className="text-muted-foreground">9425062368</p>
               </div>
             </div>
 

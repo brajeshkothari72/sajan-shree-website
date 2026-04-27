@@ -9,7 +9,7 @@ import EnquiryForm from '@/components/EnquiryForm.jsx';
 
 function EnquiryPage() {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/919425006236', '_blank');
+    window.open('https://wa.me/919425062368', '_blank');
   };
 
   return (

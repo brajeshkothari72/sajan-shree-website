@@ -48,7 +48,7 @@ function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <MessageCircle className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span className="text-sm opacity-90">94250062368</span>
+                <span className="text-sm opacity-90">9425062368</span>
               </div>
               <div className="flex items-start gap-2">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
