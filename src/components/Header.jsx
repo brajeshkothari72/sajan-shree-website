@@ -21,14 +21,14 @@ function Header() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/70 shadow-[0_1px_0_0_hsl(var(--border))]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <img 
-              src="/logo.png" 
-              alt="Sajan Shree Garments butterfly logo" 
-              className="h-12 w-12 object-contain"
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src="/logo.png"
+              alt="Sajan Shree Garments butterfly logo"
+              className="h-12 w-12 object-contain transition-transform duration-300 group-hover:scale-105"
             />
             <span className="text-xl font-bold text-primary" style={{letterSpacing: '-0.01em'}}>
               Sajan Shree Garments
@@ -40,15 +40,22 @@ function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
+                className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200 after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:rounded-full after:bg-accent after:transition-transform after:duration-300 ${
                   isActive(link.path)
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-foreground hover:bg-muted'
+                    ? 'text-primary after:scale-x-100'
+                    : 'text-foreground hover:text-primary hover:bg-muted after:scale-x-0'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
+            <Button
+              asChild
+              size="sm"
+              className="ml-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-all duration-200 active:scale-[0.98]"
+            >
+              <Link to="/enquiry">Enquire now</Link>
+            </Button>
           </nav>
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>

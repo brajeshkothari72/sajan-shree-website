@@ -83,10 +83,39 @@ module.exports = {
             height: "0",
           },
         },
+        "ken-burns": {
+          "0%": { transform: "scale(1.05)" },
+          "100%": { transform: "scale(1.18)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(16px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        shimmer: {
+          "100%": { transform: "translateX(100%)" },
+        },
+        "scroll-cue": {
+          "0%, 100%": { transform: "translateY(0)", opacity: "0.4" },
+          "50%": { transform: "translateY(6px)", opacity: "1" },
+        },
+        "gradient-pan": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "ken-burns": "ken-burns 20s ease-out forwards",
+        float: "float 4s ease-in-out infinite",
+        "fade-up": "fade-up 0.6s ease-out both",
+        shimmer: "shimmer 2s infinite",
+        "scroll-cue": "scroll-cue 1.6s ease-in-out infinite",
+        "gradient-pan": "gradient-pan 6s ease infinite",
       },
     },
   },
