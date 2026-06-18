@@ -106,6 +106,14 @@ module.exports = {
           "0%, 100%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+        "sway-x": {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(40px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -116,6 +124,8 @@ module.exports = {
         shimmer: "shimmer 2s infinite",
         "scroll-cue": "scroll-cue 1.6s ease-in-out infinite",
         "gradient-pan": "gradient-pan 6s ease infinite",
+        marquee: "marquee 28s linear infinite",
+        "sway-x": "sway-x 6s ease-in-out infinite",
       },
     },
   },
