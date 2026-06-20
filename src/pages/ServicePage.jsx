@@ -23,7 +23,7 @@ function ServicePage({ slug: routeSlug }) {
       <Header />
 
       <main>
-        <section className="py-20 bg-muted">
+        <section className="py-14 sm:py-20 bg-muted">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -41,7 +41,7 @@ function ServicePage({ slug: routeSlug }) {
           </div>
         </section>
 
-        <section className="py-20 bg-background">
+        <section className="py-14 sm:py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10">
               <motion.div

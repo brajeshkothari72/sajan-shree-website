@@ -18,25 +18,32 @@ function GalleryPage() {
       <Header />
 
       <main>
-        <section className="py-20 bg-muted">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative overflow-hidden py-24 lg:py-32">
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/about/about-main.jpg"
+              alt="Sajan Shree Garments uniform product gallery"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{letterSpacing: '-0.02em'}}>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]" style={{letterSpacing: '-0.02em'}}>
                 Uniform product gallery
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-white/90 leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
                 Explore our range of quality uniforms and garments manufactured for various industries and institutions
               </p>
             </motion.div>
           </div>
         </section>
 
-        <section className="py-20 bg-background">
+        <section className="py-14 sm:py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -49,7 +56,7 @@ function GalleryPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-muted">
+        <section className="py-14 sm:py-20 bg-muted">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <motion.div
