@@ -2,3 +2,6 @@ node_modules/
 dist/
 .vercel/
 
+# Internal business documents — not part of the website
+Gandharpuri-Proposal.html
+
