@@ -2,12 +2,8 @@ node_modules/
 dist/
 .vercel/
 
-<<<<<<< Updated upstream
 # Internal business documents — not part of the website
 Gandharpuri-Proposal.html
 
-=======
-
 # Dev-server output, written whenever vite runs in the background.
 *.log
->>>>>>> Stashed changes
